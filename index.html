@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Filter & Click Photo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+    body{
+      height: 100%;
+    }
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:1px solid black;
+    bottom: 20%;
+  }
+  .parallax {
+		  /* The image used */
+      background-image: url('https://static.vecteezy.com/system/resources/previews/004/923/501/large_2x/pastel-pink-checkerboard-free-vector.jpg');
+		  
+		
+		  /* Set a specific height */
+		  min-height: 500px; 
+		
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+  </style>
+  
+</head>
+
+<body style="background-image: url(''); background-size: cover; background-repeat: no-repeat; bottom: 10%; background-color:rgb(92, 188, 223);">
+  <div class="parallax">
+    <div style="height: 200px; background-color:rgb(143, 209, 232);font-size:36px; color:black;">
+    <label style="font-family: 'Courier New', Courier, monospace;" class="text-capitalize">Welcome! This Webpage Is all about chossing a colored-filter and clicking-save your personalized picture! Just Scroll below, enter your preferable color name and click on the button to get your filter! Simple, isn't it? Let's begin!</label>
+    </div>
+  <div class="container" style="text-align: center; bottom: 20%; font-family: 'Courier New', Courier, monospace;">
+	<h3 class="btn btn-primary" style="text-align: center;">Chooose FIlter and Click Photo!</h3>
+	<hr style="color: black;">
+  <label>Filter Color</label>
+  <input type="text" placeholder="Enter Filter Color" id="input_color">
+  <br>
+  <br>
+  <button onclick="filter_color();" class="btn btn-info" style="max-width: 400%;">Apply Filter Now!</button>
+  <br><br>
+  <button onclick="take_snapshot()" class="btn btn-info" style="max-width: 400%;">Take Snapshot</button>
+</div>
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
+<div id="slide"></div>
+<div id="bounce"></div>
+<canvas id="myCanvas2" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+  ctx.stroke();
+  </script> 
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>

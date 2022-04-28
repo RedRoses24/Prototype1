@@ -1,0 +1,31 @@
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/001/437/080/small/geometric-abstract-with-memphis-style-background-free-vector.jpg');
+    background-size: cover;
+}
+  hr{
+    color: black;
+  }
+  button{
+    max-width: 400%;
+  }
+  #myCanvas{
+    position: absolute;
+    left: 10%;
+    padding-left: 900px;
+    background-color:#0288d1;
+    top: 70%;
+    height: 50%;
+    width: 50%;
+    bottom: 10%;
+  }
+  #myCanvas2{
+    position: absolute;
+    left: 30%;
+    padding-left: 900px;
+    background-color:#0277bd;
+    top: 80%;
+    height: 50%;
+    width: 50%;
+    bottom: 10%;
+
+  }
